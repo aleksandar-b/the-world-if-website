@@ -1,0 +1,66 @@
+import { SparkleIcon } from '@/components/SparkleIcon'
+import { generateRssFeed } from '@/lib/generateRssFeed'
+
+export async function getStaticProps() {
+  if (process.env.NODE_ENV === 'production') {
+    await generateRssFeed()
+  }
+  return { props: {} }
+}
+
+---
+
+![](@/images/img-5.png)
+
+## New UI for adding a consequence {{ date: '2023-05-06T00:00Z' }}
+
+We are excited to announce the latest update for The World IF! In this release, we have introduced some exciting new features and made important improvements to enhance your experience. Here's what's new:
+
+### <SparkleIcon /> Improvements
+
+- Ability to be notified when consequnce happens in world
+- Adding new event is much simplified now with only one field
+- Fixed bug that sometimes reported the wrong number of changed files
+
+---
+
+![](@/images/img-2.png)
+
+## Summary view {{ date: '2023-03-17T00:00Z' }}
+
+We understand the importance of accessing information quickly and efficiently. That's why we have introduced the layered summary view feature. With this update, you can now access a concise and organized summary of your data, allowing you to grasp the key insights at a glance. This feature will save you time and make it easier for you to navigate through your content.
+
+### <SparkleIcon /> Improvements
+
+- Summary view for events and consequences
+- Layered graph for nth degree connections between events and consequences
+- Fixed a bug that could cause Commit to crash when autocommitting after deleting a recently active branch
+
+---
+
+![](@/images/img-3.png)
+
+## AI News view {{ date: '2023-03-06T00:00Z' }}
+
+AI-Generated News Section! Stay updated with the latest news from around the world, generated entirely by artificial intelligence based on consequences of the searched event. For every event you can see how would hypothetical news look like across 15+ categories.
+
+### <SparkleIcon /> Improvements
+
+- Added AI News section
+- Added categories for news
+- Generated with Open AI
+
+---
+
+![](@/images/img-4.png)
+
+## The World IF {{  date: '2023-03-03T00:00Z' }}
+
+The World IF is a tool for exploring the consequences of hypothetical events. It's a place where you can explore the consequences of hypothetical events and see how they might affect the world around you. You can also use it to explore what would happen if you were to make different choices in your life. The World IF is a place where you can explore the consequences of your actions and see how they might affect the world around you.
+
+---
+
+![](@/images/img.png)
+## Edit view {{ date: '2023-01-06T00:00Z' }}
+
+Introduction of edit view. You can edit events and consequences directly from the graph view. This will make it easier for you to edit your content and save time.
