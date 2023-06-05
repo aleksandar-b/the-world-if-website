@@ -1,7 +1,7 @@
 
-export function Logo(props) {
+export function Logo() {
   return (
-      <svg xmlns="http://www.w3.org/2000/svg" width="251" height="40" viewBox="0 0 251 40" fill="none"><script xmlns="" async="false" type="text/javascript" src="chrome-extension://fnjhmkhhmkbjkkabndcnnogagogbneec/in-page.js"/>
+      <svg xmlns="http://www.w3.org/2000/svg" width="251" height="40" viewBox="0 0 251 40" fill="none">
           <g clip-path="url(#clip0_1_2328)">
               <rect width="251" height="40" rx="4" fill="#04091b"/>
               <rect x="0.5" y="0.5" width="250" height="39" fill="#04091b"/>
