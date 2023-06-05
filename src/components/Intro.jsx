@@ -5,6 +5,7 @@ import { IconLink } from '@/components/IconLink'
 import { Logo } from '@/components/Logo'
 import { SignUpForm } from '@/components/SignUpForm'
 import TextTransition, { presets } from 'react-text-transition';
+import {Event} from "@/components/Event";
 
 function BookIcon(props) {
   return (
@@ -65,7 +66,7 @@ const TEXTS = [
     'AI-driven unemployment',
     'Asteroid mining becomes viable',
     'Human lifespan doubles'
-    ].map((text, idx) => <div key={idx} className={`${COLORS[idx % COLORS.length]} p-2 whitespace-nowrap`}>{text}</div>);
+    ].map((text, idx) => <div key={idx} className={`${COLORS[idx % COLORS.length]} p-2 md:whitespace-nowrap rounded`}>{text}</div>);
 
 
 export function Intro() {
@@ -88,10 +89,11 @@ export function Intro() {
       </div>
       <h1 className="mt-14 font-display text-4xl/tight font-light text-white ">
         The World IF{'     '}
-          <TextTransition springConfig={presets.stiff}>{TEXTS[index % TEXTS.length]}</TextTransition>
-        {/*<p className="text-sky-300">Russia attacks Ukraine</p>*/}
       </h1>
-      <p className="mt-4 text-sm/6 text-gray-300">
+      <div className="text-4xl">
+          <TextTransition springConfig={presets.stiff}>{TEXTS[index % TEXTS.length]}</TextTransition>
+      </div>
+        <p className="mt-4 text-sm/6 text-gray-300">
         The World IF is a community of people who are interested in the future of the world. We are a platform that enables people to make predictions about the alternative future of the world based on hypothetical event.
       </p>
       <SignUpForm />
