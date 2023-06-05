@@ -5,7 +5,6 @@ import { IconLink } from '@/components/IconLink'
 import { Logo } from '@/components/Logo'
 import { SignUpForm } from '@/components/SignUpForm'
 import TextTransition, { presets } from 'react-text-transition';
-import {Event} from "@/components/Event";
 
 function BookIcon(props) {
   return (
