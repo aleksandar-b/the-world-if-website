@@ -81,19 +81,22 @@ export function Intro() {
 
   return (
     <>
-      <div>
+      <div className="-ml-3">
+        <div className="text-xs font-semibold ml-3 w-auto border-b inline border-gray-50 border-opacity-25 p-0.5">
+            Two steps ahead
+        </div>
         <Link href="/">
           <Logo className="inline-block h-8 w-auto" />
         </Link>
       </div>
-      <h1 className="mt-14 font-display text-4xl/tight font-light text-white ">
-        The World IF{'     '}
-      </h1>
-      <div className="text-4xl">
+      {/*<h1 className="mt-14 font-display text-4xl/tight font-light text-white ">*/}
+      {/*  The World IF{'     '}*/}
+      {/*</h1>*/}
+      <div className="text-4xl mt-8 mb-8">
           <TextTransition springConfig={presets.stiff}>{TEXTS[index % TEXTS.length]}</TextTransition>
       </div>
         <p className="mt-4 text-sm/6 text-gray-300">
-        The World IF is a community of people who are interested in the future of the world. We are a platform that enables people to make predictions about the alternative future of the world based on hypothetical event.
+        The World IF is a community of people who are interested in the future of the world and second order thinking. We are a platform that enables people to make predictions about the alternative future of the world based on hypothetical event.
       </p>
       <SignUpForm />
     </>
